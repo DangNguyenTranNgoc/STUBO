@@ -5,7 +5,7 @@
 
 # User
 
-> Các API liên quan cho phép bạn làm việc với thông tin khách hàng như tạo, sửa trên từng cá nhân.
+Các API liên quan cho phép bạn làm việc với thông tin khách hàng như tạo, sửa trên từng cá nhân.
 
 Thuộc tính
 ---

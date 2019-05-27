@@ -1,0 +1,14 @@
+.column{
+    float: left;
+}
+.column-left{
+    width: 15%;
+}
+.column-middle{
+    width: 35%;
+}
+.column-right{
+    width: 50%;
+    background-color: #393939;
+    color: #fff;
+}
