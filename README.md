@@ -114,9 +114,9 @@ You can use Markdown code fences to make syntax-highlighted text. Simply
 surround your text with three backticks. This works in GitHub as well.
 See [GitHub Syntax Highlighting][fences] for more info.
 
-    ``` html
-    <strong>Hola, mundo</strong>
-    ```
+``` html
+<strong>Hola, mundo</strong>
+```
 
 #### Blockquotes
 
@@ -209,58 +209,100 @@ the blank template and customize as you see fit.
 
 [Get blank template >][template]
 
-Misc
+KHÁCH HÀNG
 ====
+Tạo thành viên mới
+------------------
+Cập nhật thông tin thành viên
+-----------------------------
+Lấy thông tin thành viên
+------------------------
+Xác thực thành viên
+-------------------
+Cập nhật tài khoản thanh toán
+----------------------------
+Lấy thông tin tài khoản thanh toán
+----------------------------------
 
-Inspirations
+SÁCH
+====
+Lấy thông tin một cuốn sách
+---------------------------
+Lấy danh sách sách
+------------------
+Lấy link tải sách
+-----------------
+Lấy dung lượng sách
+-------------------
+
+DANH MỤC
+====
+Lấy thông tin danh mục
+----------------------
+Lấy danh sách danh mục
+----------------------
+
+TÁC GIẢ
+====
+Lấy thông tin tác giả
+---------------------
+Lấy danh sách tác giả
+---------------------
+
+NHÀ XUẤT BẢN
+====
+Lấy thông tin nhà xuất bản
+--------------------------
+Lấy danh sách nhà xuất bản
+--------------------------
+
+GIỎ HÀNG
+====
+Tạo giỏ hàng
 ------------
-
-The following projects have inspired Flatdoc.
-
- * [Backbone.js] - Jeremy's projects have always adopted this "one page
- documentation" approach which I really love.
-
- * [Docco] - Jeremy's Docco introduced me to the world of literate programming,
- and side-by-side documentation in general.
-
- * [Stripe] - Flatdoc took inspiration on the look of their API documentation.
-
- * [DocumentUp] - This service has the same idea but does a hosted readme 
- parsing approach.
-
-Attributions
-------------
-
-[Photo](http://www.flickr.com/photos/doug88888/2953428679/) taken from Flickr,
-licensed under Creative Commons.
-
-Acknowledgements
+Cập nhật giỏ hàng
 ----------------
+Lấy thông tin giỏ hàng
+----------------------
+Hủy giỏ hàng
+------------
 
-© 2013, 2014, Rico Sta. Cruz. Released under the [MIT 
-License](http://www.opensource.org/licenses/mit-license.php).
+ĐƠN HÀNG
+====
+Tạo đơn hàng
+------------
+Cập nhật đơn hàng
+----------------
+Lấy thông tin đơn hàng
+----------------------
 
-**Flatdoc** is authored and maintained by [Rico Sta. Cruz][rsc] with help from its 
-[contributors][c].
+DANH SÁCH YÊU THÍCH
+====
+Tạo danh sách yêu thích
+-----------------------
+Cập nhật danhs sách yêu thích
+-----------------------------
+Lấy danh sách yêu thích
+-----------------------
+Hủy danh sách yêu thích
+-----------------------
 
- * [My website](http://ricostacruz.com) (ricostacruz.com)
- * [Github](http://github.com/rstacruz) (@rstacruz)
- * [Twitter](http://twitter.com/rstacruz) (@rstacruz)
+ĐÁNH GIÁ SÁCH
+====
+Tạo đánh giá
+------------
+Cập nhật đánh giá
+-----------------
+Lấy đánh giá
+------------
 
-[rsc]: http://ricostacruz.com
-[c]:   http://github.com/rstacruz/flatdoc/contributors
-
-[GitHub API]: http://github.com/api
-[marked]: https://github.com/chjj/marked
-[Backbone.js]: http://backbonejs.org
-[dox]: https://github.com/visionmedia/dox
-[Stripe]: https://stripe.com/docs/api
-[Docco]: http://jashkenas.github.com/docco
-[GitHub pages]: https://pages.github.com
-[fences]:https://help.github.com/articles/github-flavored-markdown#syntax-highlighting
-[DocumentUp]: http://documentup.com
-
-[project]: https://github.com/rstacruz/flatdoc
-[template]: https://github.com/rstacruz/flatdoc/raw/gh-pages/templates/template.html
-[blank]: https://github.com/rstacruz/flatdoc/raw/gh-pages/templates/blank.html
-[dist]: https://github.com/rstacruz/flatdoc/tree/gh-pages/v/0.9.0
+SÁCH ĐÃ MUA
+====
+Thêm sách đã mua
+----------------
+Cập nhật sách đã mua
+--------------------
+Lấy thông tin sách đã mua
+-------------------------
+Lấy danh sách sách đã mua
+-------------------------
