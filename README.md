@@ -3,7 +3,7 @@ Webservices
 
 GIỚI THIỆU
 ====
-> Là một thành phần thuộc luận văn tốt nghiệp đề tài "Book Online". Webservice cung cấp các chức năng thao tác với hệ thống và cơ sở dữ liệu. Được xây dựng dựa trên Oracle SOA Suite 12c và hoạt động trên máy chủ Weblogic.
+Là một thành phần thuộc luận văn tốt nghiệp đề tài "Book Online". Webservice cung cấp các chức năng thao tác với hệ thống và cơ sở dữ liệu. Được xây dựng dựa trên Oracle SOA Suite 12c và hoạt động trên máy chủ Weblogic.
 
 Hướng dẫn cài đặt
 ----------------
@@ -36,7 +36,7 @@ Lỗi
 |`404 Not Found`| Không tìm thấy thông tin được yêu cầu. |
 |`500 Internal Server Error` | Lỗi máy chủ. |
 
-Ngoài ra có nhiều lỗi khác nữa được liệt kê [tại đậy](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+Ngoài ra có nhiều lỗi khác nữa được liệt kê [tại đây](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 
 Phân trang
 ----------
