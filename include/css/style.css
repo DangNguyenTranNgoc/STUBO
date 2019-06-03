@@ -682,6 +682,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 .menubar {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  background: #f9f9f9;
 }
 .menubar .section {
   padding: 30px 30px;
@@ -788,7 +789,7 @@ a.big.button:hover:visited {
 }
 .menu a,
 .menu a:visited {
-  color: #2badad;
+  color: #006eff;
 }
 .menu a:hover {
   color: #228a8a;
