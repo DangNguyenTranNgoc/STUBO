@@ -29,12 +29,13 @@ Mặc định, hệ thống sẽ trả về định dạng JSON. Các yêu cầu
 Lỗi
 ---
 Đôi khi bạn sẽ gặp lỗi khi truy cập dịch vụ. Có 4 lỗi phổ biến là:
+
 |Lỗi|Ý nghĩa|
-|:--|:------|
-|`400 Bad Request`| Yêu cầu không hợp lệ (VD: yêu cầu phương thức không được hổ trợ). |
-|`401 Unauthorized`| Lỗi xác thực hoặc không có quyền truy cập. |
-|`404 Not Found`| Không tìm thấy thông tin được yêu cầu. |
-|`500 Internal Server Error` | Lỗi máy chủ. |
+|:-|:-|
+|`400 Bad Request`|Yêu cầu không hợp lệ (VD: yêu cầu phương thức không được hổ trợ).|
+|`401 Unauthorized`|Lỗi xác thực hoặc không có quyền truy cập.|
+|`404 Not Found`|Không tìm thấy thông tin được yêu cầu.|
+|`500 Internal Server Error`|Lỗi máy chủ.|
 
 Ngoài ra có nhiều lỗi khác nữa được liệt kê [tại đây](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 

@@ -115,7 +115,7 @@ textarea,
 input {
   font-family: Helvetica Neue, Open Sans, sans-serif;
   line-height: 1.6;
-  font-size: 13px;
+  font-size: 14px;
   color: #505050;
 }
 @media (max-width: 480px) {
@@ -208,7 +208,7 @@ a:hover {
   color: #9090aa;
 }
 .content code {
-  font-family: Menlo, monospace;
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace, serif;
   background: #f3f6fb;
   padding: 1px 3px;
   font-size: 0.95em;
@@ -216,8 +216,8 @@ a:hover {
 .content pre > code {
   display: block;
   background: transparent;
-  font-size: 0.85em;
   letter-spacing: -1px;
+  color: #DCDCDC;
 }
 .content blockquote :first-child {
   padding-top: 0;
@@ -232,26 +232,24 @@ a:hover {
   border-collapse: collapse;
   clear: both;
   float: left;
+  border-bottom: 1px solid #ccc;
+}
+.content table thead{
+  border-bottom: 1px solid #ccc;
 }
 .content table tr {
-  border-top: 1px solid #ccc;
   background-color: #fff;
   margin: 0;
   padding: 0;
 }
-.content table tr :nth-child(2n) {
-  background-color: #f8f8f8;
-}
 .content table tr th {
   text-align: auto;
   font-weight: bold;
-  border: 1px solid #ccc;
   margin: 0;
   padding: 6px 13px;
 }
 .content table tr td {
   text-align: auto;
-  border: 1px solid #ccc;
   margin: 0;
   padding: 6px 13px;
 }
@@ -287,8 +285,7 @@ a:hover {
   clear: both;
 }
 .content blockquote {
-  color: #9090aa;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  color: #fff;
 }
 .content h1,
 .content h2,
@@ -504,7 +501,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
 }
 @media (min-width: 1180px) {
   body:not(.no-literate) .content-root {
-    background-color: #3e3e3e;
+    background-color: #1E1E1E;
     -webkit-box-shadow: inset 780px 0 #fff, inset 781px 0 #dfe2e7, inset 790px 0 5px -10px rgba(0,0,0,0.1);
     box-shadow: inset 780px 0 #fff, inset 781px 0 #dfe2e7, inset 790px 0 5px -10px rgba(0,0,0,0.1);
   }
@@ -789,7 +786,7 @@ a.big.button:hover:visited {
 }
 .menu a,
 .menu a:visited {
-  color: #006eff;
+  color: #2badad;
 }
 .menu a:hover {
   color: #228a8a;
@@ -838,18 +835,22 @@ a.big.button:hover:visited {
   border-radius: 2px;
   background: #2badad;
 }
-code .string,
-code .number {
-  color: #3ac;
+code .string{
+  color: #D69D85;
 }
+code .number{
+  color: #B8D7A3;
+} 
 code .init {
   color: #383;
 }
 code .keyword {
+  color: #569CD6;
   font-weight: bold;
 }
 code .comment {
-  color: #adadcc;
+  color: #57A64A;
+  font-style: italic;
 }
 .large-brief .content > h1:first-child + p,
 .content > p.brief {
