@@ -10,7 +10,7 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
-SET time_zone = "+00:00";
+SET time_zone = "+07:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -229,24 +229,22 @@ CREATE TABLE IF NOT EXISTS `rating` (
 
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
-  `userid` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(20) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `userpassword` varchar(32) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `userfirstname` varchar(20) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `userlastname` varchar(20) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `usersalt` char(10) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
-  `userbirthday` datetime DEFAULT NULL,
-  `usernewsletter` tinyint(1) DEFAULT NULL,
-  `useractive` tinyint(1) DEFAULT NULL,
-  `userdayadd` datetime DEFAULT NULL,
-  `userdayupd` datetime DEFAULT NULL,
-  `useravatar` text COLLATE utf8mb4_vietnamese_ci,
-  `usertype` tinyint(1) DEFAULT NULL,
-  `userdateexpired` datetime DEFAULT NULL,
-  `udaddress` text COLLATE utf8mb4_vietnamese_ci,
-  `udaccountbalance` int(11) DEFAULT NULL,
-  `uddatecreate` datetime DEFAULT CURRENT_TIMESTAMP,
-  `userdatemodified` datetime DEFAULT CURRENT_TIMESTAMP,
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(20) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `user_password` varchar(32) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `user_first_name` varchar(20) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `user_last_name` varchar(20) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `user_salt` char(10) COLLATE utf8mb4_vietnamese_ci DEFAULT NULL,
+  `user_birthday` datetime DEFAULT NULL,
+  `user_newsletter` tinyint(1) DEFAULT NULL,
+  `user_active` tinyint(1) DEFAULT NULL,
+  `user_avatar` text COLLATE utf8mb4_vietnamese_ci,
+  `user_type` tinyint(1) DEFAULT NULL,
+  `user_date_expired` datetime DEFAULT NULL,
+  `user_address` text COLLATE utf8mb4_vietnamese_ci,
+  `user_account_balance` int(11) DEFAULT NULL,
+  `user_date_create` datetime DEFAULT CURRENT_TIMESTAMP,
+  `user_date_modified` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`userid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 COMMIT;
