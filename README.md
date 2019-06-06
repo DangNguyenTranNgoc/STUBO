@@ -54,8 +54,9 @@ Test
 ----
 Để test thử hoạt động của Server, các bạn có thể tải file [tại đây](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/test) và Deploy lên server.
 
-XÁC THỰC
-====
+Database
+--------
+Database các bạn tải tại [link sau](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/database)
 
 KHÁCH HÀNG
 ====
@@ -257,8 +258,11 @@ Các thuộc tính của đơn hàng
 
 ** Tình trạng đơn hàng:
 
-- 0: Chưa thanh toán.
-- 1: Đã thanh toán.
+- -1: Đã hủy.
+- 0: Đang chờ xử lý.
+- 1: Chưa thanh toán.
+- 2: Đã thanh toán.
+- 3: Hoàn tất.
 
 ### Danh sách sách thuộc đơn hàng
 
