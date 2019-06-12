@@ -182,12 +182,32 @@ Thuộc tính của danh mục
 |`Catogery_Id`|String(11)|Mã danh mục.|`READONLY`|
 |`Catogery_Name`|String(128)|Tên danh mục.|`READONLY`|
 |`Category_Image_Link`|String|Link Hình ảnh danh mục.|`READONLY`|
-|`Category_Date_Created`|Datetime|Ngày khởi tạo.|`READONLY`|
-|`Category_Date_Modified`|Datetime|Ngày chỉnh sửa gần nhất.|`READONLY`|
 
 Lấy thông tin danh mục
 ----------------------
-> Đang xây dựng
+API lấy thông tin danh mục thông qua ID.
+
+> <img src="./include/image/btn-get-01.svg" height="15"> http://localhost:7101/soa-infra/resources/default/v1.0!1.0/get_category?id=1
+
+```json
+{
+    "result": {
+        "category": [
+            {
+                "id": 1,
+                "parent_id": {
+                    "@nil": "true"
+                },
+                "name": "Sách văn học",
+                "image_link": {
+                    "@nil": "true"
+                },
+                "slug": "sach-van-hoc"
+            }
+        ]
+    }
+}
+```
 
 Lấy danh sách danh mục
 ----------------------
