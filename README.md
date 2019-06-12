@@ -187,7 +187,7 @@ Lấy thông tin danh mục
 ----------------------
 API lấy thông tin danh mục thông qua ID.
 
-> <img src="./include/image/btn-get-01.svg" height="15"> http://localhost:7101/soa-infra/resources/default/v1.0!1.0/get_category?id=1
+> <img src="./include/image/btn-get.svg" height="15"> http://localhost:7101/soa-infra/resources/default/v1.0!1.0/get_category?id=1
 
 ```json
 {
