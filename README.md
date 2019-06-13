@@ -22,9 +22,10 @@ Mặc định, hệ thống sẽ trả về định dạng JSON. Các yêu cầu
 - Ngày tháng được định dạng theo chuẩn [ISO8601](https://vi.wikipedia.org/wiki/ISO_8601): `YYYY-MM-DDTHH:MM:SS`
 - IDs trả về có kiểu Integers.
 - Số thập phân sẽ được ngăn cách bởi dấu phẩy (VD: 12.3).
-- Số tiền như tổng tiền, giá sách, ... sẽ được trả về dưới dạng chuỗi viết liền (VD: "123000").
+- Số tiền như tổng tiền, giá sách, ... sẽ được trả về dưới dạng chuỗi viết liền. (VD: "123000")
 - Các số khác sẽ có kiểu Integers.
 - Các trường trống nên có kiểu `null` hoặc để trống ("") thay vì bỏ qua nó.
+- Các id trống sẽ có giá trị là `0`. (VD: `"parent_id" : "0"`)
 
 Lỗi
 ---
