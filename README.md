@@ -49,7 +49,15 @@ Khi lấy danh sách, nếu như không có tham số theo sau, hệ thống s�
 Các bạn có thể chỉ định trang với tham số `?page=`
 `GET /users?page=2`
 
-Tổng số phần tử và tổng số trang sẽ được trả về tại phần `HTTP Header` với tham số `STUBO-Total` và `STUBO-TotalPages`.
+Tổng số phần tử và tổng số trang sẽ được trả về tại phần `HTTP Header` với tham số `STUBO-TotalItems` và `STUBO-TotalPages`.
+> VD:
+> Connection →close
+> Date →Sun, 16 Jun 2019 14:23:32 GMT
+> Content-Length →3745
+> Content-Type →application/json
+> X-ORACLE-DMS-ECID →ed16cb40-43c3-4a28-8f93-ee9ea3a8b7ec-0000024c
+> X-ORACLE-DMS-RID →0
+> STUBO-TotalItems →21
 
 Test
 ----
@@ -83,8 +91,6 @@ Thuộc tính của khách hàng
 |`User_Date_Expired`|Datetime|Ngày hết hạn thành viên.|`READ-WRITE`|
 |`User_Address`|String|Địa chỉ khách hàng.|`READ-WRITE`|
 |`User_Account_Balance`|Integer(11)|Số tiền còn trong tài khoản.|`READ-WRITE`|
-|`User_Date_Created`|Datetime|Ngày khởi tạo.|`READONLY`|
-|`User_Date_Modified`|Datetime|Ngày chỉnh sửa gần nhất.|`READONLY`|
 
 Tạo thành viên mới
 ------------------
@@ -193,27 +199,53 @@ API lấy thông tin danh mục thông qua ID.
 ```json
 {
     "result": {
-        "category": [
+        "category": {
             {
-                "id": 1,
-                "parent_id": {
-                    "@nil": "true"
-                },
-                "name": "Sách văn học",
-                "image_link": {
-                    "@nil": "true"
-                },
-                "slug": "sach-van-hoc"
+                "id" : "1",
+                "parent_id" : "0",
+                "name" : "Sách văn học",
+                "image_link" : " ",
+                "slug" : "sach-van-hoc"
             }
-        ]
+        }
     }
 }
 ```
 
 Lấy danh sách danh mục
 ----------------------
-> Đang xây dựng
 
+API lấy thông tin tất cả danh mục sách.
+
+> <img src="./include/image/btn-get.svg" height="15"> http://localhost:7101/soa-infra/resources/default/v1.0!1.0/get_category
+
+```json
+{
+  "result" : {
+    "eCategory" : {
+      "id" : "1",
+      "parent_id" : "0",
+      "name" : "Sách văn học",
+      "image_link" : " ",
+      "slug" : "sach-van-hoc"
+    },
+    "eCategory" : {
+      "id" : "2",
+      "parent_id" : "0",
+      "name" : "Sách kinh tế",
+      "image_link" : " ",
+      "slug" : "sach-kinh-te"
+    },
+    "eCategory" : {
+      "id" : "3",
+      "parent_id" : "0",
+      "name" : "Sách kỹ năng sống",
+      "image_link" : " ",
+      "slug" : "sach-ky-nang-song"
+    }
+  }
+}
+```
 TÁC GIẢ
 ====
 
@@ -269,8 +301,6 @@ Các thuộc tính của đơn hàng
 |`Order_Comment`|TEXT|Ghi chú đơn hàng|`READONLY`|
 |`Order_Status`|Integer(1)|Tình trạng đơn hàng.\**|`READONLY`|
 |`Order_Items`|Array|Danh sách sách thuộc đơn hàng.|`READONLY`|
-|`Order_Date_Created`|Datetime|Ngày khởi tạo|`READONLY`|
-|`Order_Date_Modified`|Datetime|Ngày chỉnh sửa gần nhất|`READONLY`|
 
 \* Loại thanh toán:
 
