@@ -180,6 +180,10 @@ DANH MỤC
 ====
 
 API cho phép lấy thông tin một hoặc nhiều danh mục.
+Link tải module:
+
+- [Phiên bản mới nhất ngày 12/06/2019.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/category/category_v1.0.jar)
+- [Folder.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/category)
 
 Thuộc tính của danh mục
 -----------------------
@@ -192,6 +196,7 @@ Thuộc tính của danh mục
 
 Lấy thông tin danh mục
 ----------------------
+
 API lấy thông tin danh mục thông qua ID.
 
 > <img src="./include/image/btn-get.svg" height="15"> http://localhost:7101/soa-infra/resources/default/v1.0!1.0/get_category?id=1
@@ -199,7 +204,7 @@ API lấy thông tin danh mục thông qua ID.
 ```json
 {
     "result": {
-        "category": {
+        "category":
             {
                 "id" : "1",
                 "parent_id" : "0",
@@ -260,8 +265,6 @@ Thuộc tính của tác giả
 |`Author_Name`|String|Tên tác giả|`READONLY`|
 |`Author_Note`|String|Ghi chú thông tin|`READONLY`|
 |`Author_Image`|String|Link ảnh tác giả|`READONLY`|
-|`Author_DateCreate`|Datetime|Ngày khởi tạo|`READONLY`|
-|`Author_DateModified`|Datetime|Ngày chỉnh sửa gần nhất|`READONLY`|
 
 Lấy thông tin tác giả
 ---------------------
