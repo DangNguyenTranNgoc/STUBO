@@ -67,7 +67,7 @@ Test
 
 Database
 --------
-Database các bạn tải tại [link sau](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/database)
+Database (cập nhật ngày 26/06/2019) các bạn tải tại [link sau](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/database)
 
 KHÁCH HÀNG
 ====
@@ -269,6 +269,10 @@ TÁC GIẢ
 ====
 
 API cho phép lấy thông tin của một hay nhiều tác giả.
+Link tải module:
+
+- [Phiên bản mới nhất ngày 26/06/2019.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/author/Author_v1.2.jar)
+- [Folder.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/author)
 
 Thuộc tính của tác giả
 ----------------------
@@ -282,11 +286,57 @@ Thuộc tính của tác giả
 
 Lấy thông tin tác giả
 ---------------------
-> Đang xây dựng
+
+API cho phép lấy thông tin tác giả
+
+> https://localhost:7102/soa-infra/resources/default/Author!1.0/Author?id=8
+
+```json
+{
+  "author" : [ {
+    "authorId" : 8,
+    "authorName" : "Nguyễn Ngọc Thạch",
+    "authorNote" : "Trong một năm, Nguyễn Ngọc Thạch được mọi người chú ý khi ra mắt 5 tập sách về những chủ đề hiện thực khác nhau. Từ Đời Callboy về thế giới đồng tính, Lòng dạ đàn bà, câu chuyện kinh dị của thập niên 60, cho đến Chuyển giới; Mẹ ơi, con đồng tính, và mới nhất là Chênh vênh hai lăm.\r\n\r\n\"Chênh vênh hai lăm, thực chất xuất phát từ những status mình hay viết trên facebook. Cách viết của nó cũng lạ, thường được mình viết khi chạy xe, nhìn ngắm xe cộ, đường xá, những con người đang cuộn mình mưu sinh của Sài Gòn. Cứ vậy rồi suy nghĩ, về đến nhà ngồi gõ một vài dòng chia sẻ trên facebook, được mọi người quan tâm, chia sẻ. Có bạn nói, sao Thạch không gom status ra một cuốn sách thử... vậy là mình làm theo.\r\n\r\nChênh vênh hai lăm cũng không theo một trình tự không gian, thời gian nào, chỉ là theo mạch của cảm xúc, trôi về đâu thì viết tới đó, nên có khi đọc xong, mọi người sẽ thấy sao mà nó... chênh vênh quá.\r\n\r\nChênh vênh hai lăm, đồng thời cũng là lời cảm ơn gởi đến gia đình, bạn bè, những người đã luôn ủng hộ trong suốt một năm qua, khi Thạch chập chững bước chân vào con đường viết lách. Hi vọng mọi người sẽ thích món quà nho nhỏ này.\"",
+    "authorImage" : "https://www.vinabook.com/images/thumbnails/author/210x/151695_fulltacgianguyenngocthach745f9.jpg"
+  } ]
+}
+```
 
 Lấy danh sách tác giả
 ---------------------
-> Đang xây dựng
+
+API cho phép lấy danh sách tác giả.
+
+>https://localhost:7102/soa-infra/resources/default/Author!1.0/Author
+
+```json
+{
+    "author": [
+        {
+            "authorId": 1,
+            "authorName": "Phạm Quang Huy ",
+            "authorNote": {
+                "@nil": "true"
+            },
+            "authorImage": " "
+        },
+        {
+            "authorId": 2,
+            "authorName": "Trần Thu Hà",
+            "authorNote": {
+                "@nil": "true"
+            },
+            "authorImage": " "
+        },
+        {
+            "authorId": 3,
+            "authorName": "J. K. Rowling",
+            "authorNote": "J.K Rowling là bút danh của Joanne \"Jo\" Rowling, sinh ngày 31/7/1965, cư ngụ tại thủ đô Edinburgh,Scotland là tiểu thuyết gia người Anh, tác giả bộ truyện giả tưởng nổi tiếng Harry Potter với bút danh J. K. Rowling.\r\nBộ sách này được hàng triệu độc giả già trẻ trên thế giới yêu thích, nhận được nhiều giải thưởng liên tiếp và đến năm 2005 bán được 300 triệu bản trên toàn thế giới. Vào năm 2006, tạp chí Forbes xem bà là người phụ nữ giàu thứ hai trong lĩnh vực nghệ thuật giải trí chỉ sau Oprah Winfrey. Năm 2007, sau thành công vang dội của truyện Harry Potter 7 và phim Harry Potter 5, bà được tạp chí US Entertainment Weekly là 1 trong 25 nghệ sĩ của năm 2007. Bà đã được trao huân chương Bắc Đẩu Bội tinh vào ngày 3 tháng 2 năm 2009 vì tài năng xuất chúng về văn học thiếu nhi. Năm 2010 bà được trao Giải Văn học Hans Christian Andersen.",
+            "authorImage": "https://www.vinabook.com/tac-gia/j-k-rowling-i3548"
+        }
+    ]
+}
+```
 
 NHÀ XUẤT BẢN
 ====
