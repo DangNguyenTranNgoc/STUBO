@@ -51,13 +51,15 @@ Các bạn có thể chỉ định trang với tham số `?page=`
 
 Tổng số phần tử và tổng số trang sẽ được trả về tại phần `HTTP Header` với tham số `STUBO-TotalItems` và `STUBO-TotalPages`.
 > VD:
-> Connection →close
-> Date →Sun, 16 Jun 2019 14:23:32 GMT
-> Content-Length →3745
-> Content-Type →application/json
-> X-ORACLE-DMS-ECID →ed16cb40-43c3-4a28-8f93-ee9ea3a8b7ec-0000024c
-> X-ORACLE-DMS-RID →0
-> STUBO-TotalItems →21
+```
+Connection →close
+Date →Sun, 16 Jun 2019 14:23:32 GMT
+Content-Length →3745
+Content-Type →application/json
+X-ORACLE-DMS-ECID →ed16cb40-43c3-4a28-8f93-ee9ea3a8b7ec-0000024c
+X-ORACLE-DMS-RID →0
+STUBO-TotalItems →21
+```
 
 Test
 ----
@@ -182,7 +184,7 @@ DANH MỤC
 API cho phép lấy thông tin một hoặc nhiều danh mục.
 Link tải module:
 
-- [Phiên bản mới nhất ngày 12/06/2019.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/category/category_v1.0.jar)
+- [Phiên bản mới nhất ngày 26/06/2019.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/category/category_v2.2.jar)
 - [Folder.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/category)
 
 Thuộc tính của danh mục
@@ -199,21 +201,19 @@ Lấy thông tin danh mục
 
 API lấy thông tin danh mục thông qua ID.
 
-> <img src="./include/image/btn-get.svg" height="15"> http://localhost:7101/soa-infra/resources/default/v1.0!1.0/get_category?id=1
+> <img src="./include/image/btn-get.svg" height="15"> http://localhost:7101/soa-infra/resources/default/category_process!1.0/Category?id=5
 
 ```json
 {
-    "result": {
-        "category":
-            {
-                "id" : "1",
-                "parent_id" : "0",
-                "name" : "Sách văn học",
-                "image_link" : " ",
-                "slug" : "sach-van-hoc"
-            }
+    "category": [
+        {
+            "categoryId": "5",
+            "categoryParentId": "0",
+            "categoryName": "Sách Khoa học - Kỹ thuật",
+            "categoryImageLink": " ",
+            "categorySlug": "sach-khoa-hoc-ky-thuat"
         }
-    }
+    ]
 }
 ```
 
@@ -222,33 +222,47 @@ Lấy danh sách danh mục
 
 API lấy thông tin tất cả danh mục sách.
 
-> <img src="./include/image/btn-get.svg" height="15"> http://localhost:7101/soa-infra/resources/default/v1.0!1.0/get_category
+> <img src="./include/image/btn-get.svg" height="15"> http://localhost:7101/soa-infra/resources/default/category_process!1.0/Category
 
 ```json
 {
-  "result" : {
-    "eCategory" : {
-      "id" : "1",
-      "parent_id" : "0",
-      "name" : "Sách văn học",
-      "image_link" : " ",
-      "slug" : "sach-van-hoc"
-    },
-    "eCategory" : {
-      "id" : "2",
-      "parent_id" : "0",
-      "name" : "Sách kinh tế",
-      "image_link" : " ",
-      "slug" : "sach-kinh-te"
-    },
-    "eCategory" : {
-      "id" : "3",
-      "parent_id" : "0",
-      "name" : "Sách kỹ năng sống",
-      "image_link" : " ",
-      "slug" : "sach-ky-nang-song"
-    }
-  }
+    "category": [
+        {
+            "id": 1,
+            "parentId": 0,
+            "name": "Sách văn học",
+            "imageLink": " ",
+            "slug": "sach-van-hoc"
+        },
+        {
+            "id": 2,
+            "parentId": 0,
+            "name": "Sách kinh tế",
+            "imageLink": " ",
+            "slug": "sach-kinh-te"
+        },
+        {
+            "id": 3,
+            "parentId": 0,
+            "name": "Sách kỹ năng sống",
+            "imageLink": " ",
+            "slug": "sach-ky-nang-song"
+        },
+        {
+            "id": 4,
+            "parentId": 0,
+            "name": "Sách Giáo khoa - Giáo trình",
+            "imageLink": " ",
+            "slug": "sach-giao-khoa-giao-trinh"
+        },
+        {
+            "id": 5,
+            "parentId": 0,
+            "name": "Sách Khoa học - Kỹ thuật",
+            "imageLink": " ",
+            "slug": "sach-khoa-hoc-ky-thuat"
+        }
+    ]
 }
 ```
 TÁC GIẢ
