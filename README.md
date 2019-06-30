@@ -114,7 +114,34 @@ Lấy thông tin thành viên
 ------------------------
 
 ### Lấy thông tin thành viên
-> Đang xây dựng
+
+API lấy thông tin thành viên dựa trên ID.
+
+> http://localhost:7101/soa-infra/resources/default/User!1.0/user?id=2
+
+```json
+{
+    "user": [
+        {
+            "userId": 2,
+            "userName": "snuff",
+            "userEmail": "tyrell1981@gmail.com",
+            "userFirstName": "Jones",
+            "userLastName": "James",
+            "userBirthDay": "1991-06-12T00:00:00.000+07:00",
+            "userNewsLetter": false,
+            "userActive": false,
+            "userAvatar": "https://www.fakepersongenerator.com/Face/male/male20171084006419891.jpg",
+            "userType": true,
+            "userDateExpired": {
+                "@nil": "true"
+            },
+            "userAddress": "Elkins, West Virginia(WV), 26241",
+            "userBalance": "0"
+        }
+    ]
+}
+```
 
 ### Lấy hạn thành viên
 > Đang xây dựng
@@ -332,7 +359,7 @@ API cho phép lấy danh sách tác giả.
             "authorId": 3,
             "authorName": "J. K. Rowling",
             "authorNote": "J.K Rowling là bút danh của Joanne \"Jo\" Rowling, sinh ngày 31/7/1965, cư ngụ tại thủ đô Edinburgh,Scotland là tiểu thuyết gia người Anh, tác giả bộ truyện giả tưởng nổi tiếng Harry Potter với bút danh J. K. Rowling.\r\nBộ sách này được hàng triệu độc giả già trẻ trên thế giới yêu thích, nhận được nhiều giải thưởng liên tiếp và đến năm 2005 bán được 300 triệu bản trên toàn thế giới. Vào năm 2006, tạp chí Forbes xem bà là người phụ nữ giàu thứ hai trong lĩnh vực nghệ thuật giải trí chỉ sau Oprah Winfrey. Năm 2007, sau thành công vang dội của truyện Harry Potter 7 và phim Harry Potter 5, bà được tạp chí US Entertainment Weekly là 1 trong 25 nghệ sĩ của năm 2007. Bà đã được trao huân chương Bắc Đẩu Bội tinh vào ngày 3 tháng 2 năm 2009 vì tài năng xuất chúng về văn học thiếu nhi. Năm 2010 bà được trao Giải Văn học Hans Christian Andersen.",
-            "authorImage": "https://www.vinabook.com/tac-gia/j-k-rowling-i3548"
+            "authorImage": "https://www.vinabook.com/images/thumbnails/author/210x/133281_jk-rowling-sum2348620b.jpg"
         }
     ]
 }
