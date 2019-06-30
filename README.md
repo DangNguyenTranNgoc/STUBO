@@ -105,7 +105,26 @@ Cập nhật thông tin thành viên
 > Đang xây dựng
 
 ### Cập nhật tài khoản thanh toán
-> Đang xây dựng
+
+API cập nhật tài khoản thành viên.
+Link tải module:
+
+- [Phiên bản mới nhất ngày 30/06/2019.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/user/retrieve%20a%20user/user_v2.4.jar)
+- [Folder.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/user/)
+
+Tham số của API
+---------------
+
+|Tham số|Loại|Mô tả|
+|:-|:-:|:-|
+|`id`|Integer|Mã của thành viên|
+|`money`|String|Số tiền thêm hoặc giảm|
+|`add`|Integer|Đánh dấu thêm hoặc giảm\*|
+
+\* Tham số `add`:
+
+- 0: Cộng thêm (Mặc định).
+- 1: Giảm bớt.
 
 ### Cập nhật hạn thành viên
 > Đang xây dựng
@@ -116,6 +135,10 @@ Lấy thông tin thành viên
 ### Lấy thông tin thành viên
 
 API lấy thông tin thành viên dựa trên ID.
+Link tải module:
+
+- [Phiên bản mới nhất ngày 30/06/2019.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/user/retrieve%20a%20user/user_v1.0.jar)
+- [Folder.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/user/retrieve%20a%20user)
 
 > http://localhost:7101/soa-infra/resources/default/User!1.0/user?id=2
 
