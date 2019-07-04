@@ -126,6 +126,8 @@ Tham số của API
 - 0: Cộng thêm (Mặc định).
 - 1: Giảm bớt.
 
+><img src="./include/image/btn-put.svg" height="15"> http://localhost:7101/soa-infra/resources/default/User!1.0/balance?id=5&money=20000
+
 ### Cập nhật hạn thành viên
 > Đang xây dựng
 
@@ -137,10 +139,10 @@ Lấy thông tin thành viên
 API lấy thông tin thành viên dựa trên ID.
 Link tải module:
 
-- [Phiên bản mới nhất ngày 30/06/2019.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/user/retrieve%20a%20user/user_v1.0.jar)
-- [Folder.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/user/retrieve%20a%20user)
+- [Phiên bản mới nhất ngày 30/06/2019.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/user/user_v2.4.jar)
+- [Folder.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/user)
 
-> http://localhost:7101/soa-infra/resources/default/User!1.0/user?id=2
+><img src="./include/image/btn-get.svg" height="15"> http://localhost:7101/soa-infra/resources/default/User!1.0/user?id=2
 
 ```json
 {
@@ -339,7 +341,7 @@ Lấy thông tin tác giả
 
 API cho phép lấy thông tin tác giả
 
-> https://localhost:7102/soa-infra/resources/default/Author!1.0/Author?id=8
+><img src="./include/image/btn-get.svg" height="15"> https://localhost:7102/soa-infra/resources/default/Author!1.0/Author?id=8
 
 ```json
 {
@@ -357,7 +359,7 @@ Lấy danh sách tác giả
 
 API cho phép lấy danh sách tác giả.
 
->https://localhost:7102/soa-infra/resources/default/Author!1.0/Author
+><img src="./include/image/btn-get.svg" height="15"> https://localhost:7102/soa-infra/resources/default/Author!1.0/Author
 
 ```json
 {
