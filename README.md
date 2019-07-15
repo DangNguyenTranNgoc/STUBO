@@ -139,7 +139,7 @@ Lấy thông tin thành viên
 
 API lấy thông tin thành viên dựa trên ID.
 
-><img src="./include/image/btn-get.svg" height="15"> http://localhost:7101/soa-infra/resources/default/User!1.0/user?id=2
+><img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/User!2.4/user?id=2
 
 ```json
 {
@@ -231,7 +231,7 @@ Lấy thông tin một cuốn sách
 
 API lấy thông tin một cuốn sách theo ID.
 
-> <img src="./include/image/btn-get.svg" height="15"> https://10.0.75.1:7102/soa-infra/resources/default/Book!1.0/book?id=12
+> <img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Book!2.0/book?id=12
 
 ```json
 {
@@ -298,7 +298,7 @@ Lấy danh sách sách
 ------------------
 API cho phép lấy thông tin danh sách các cuốn sách. Mặc định API sẽ trả về 10 cuốn sách đầu tiên theo thứ tự ID tăng dần. Để lấy 10 cuốn tiếp theo sử dụng thông số `page`.
 
-> <img src="./include/image/btn-get.svg" height="15"> https://localhost:7102/soa-infra/resources/default/Book!1.0/book
+> <img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Book!2.0/book
 
 ```json
 {
@@ -792,7 +792,7 @@ Lấy thông tin danh mục
 
 API lấy thông tin danh mục thông qua ID.
 
-> <img src="./include/image/btn-get.svg" height="15"> http://localhost:7101/soa-infra/resources/default/category_process!1.0/Category?id=5
+> <img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/category_process!2.2/Category?id=5
 
 ```json
 {
@@ -813,7 +813,7 @@ Lấy danh sách danh mục
 
 API lấy thông tin tất cả danh mục sách.
 
-> <img src="./include/image/btn-get.svg" height="15"> http://localhost:7101/soa-infra/resources/default/category_process!1.0/Category
+> <img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/category_process!2.2/Category
 
 ```json
 {
@@ -880,7 +880,7 @@ Lấy thông tin tác giả
 
 API cho phép lấy thông tin tác giả
 
-><img src="./include/image/btn-get.svg" height="15"> https://localhost:7102/soa-infra/resources/default/Author!1.0/Author?id=8
+><img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Author!1.2/Author?id=8
 
 ```json
 {
@@ -898,7 +898,7 @@ Lấy danh sách tác giả
 
 API cho phép lấy danh sách tác giả.
 
-><img src="./include/image/btn-get.svg" height="15"> https://localhost:7102/soa-infra/resources/default/Author!1.0/Author
+><img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Author!1.2/Author
 
 ```json
 {
