@@ -7,7 +7,7 @@ Là một thành phần thuộc luận văn tốt nghiệp đề tài "Book Onli
 
 Danh sách các request
 ---------------------
-![Danh sách các request](./include/image/list_of_request.png)
+![Danh sách các request](./include/image/list_of_request.PNG)
 
 Hướng dẫn cài đặt
 ----------------
