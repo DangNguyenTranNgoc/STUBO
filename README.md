@@ -5,6 +5,10 @@ GIỚI THIỆU
 ====
 Là một thành phần thuộc luận văn tốt nghiệp đề tài "Book Online". Webservice cung cấp các chức năng thao tác với hệ thống và cơ sở dữ liệu. Được xây dựng dựa trên Oracle SOA Suite 12c và hoạt động trên máy chủ Weblogic.
 
+Danh sách các request
+---------------------
+![Danh sách các request](/include/image/list_of_request.png)
+
 Hướng dẫn cài đặt
 ----------------
 Các bạn vui lòng tham khảo hướng dẫn cài đặt ở [link sau](https://docs.google.com/document/d/1O_k8r3JOXMeDWBqN8y5NaVocXxu-mPnCBLKtbaP-iBA/edit?usp=sharing)
@@ -1031,29 +1035,126 @@ Lấy đánh giá
 ------------
 > Đang xây dựng
 
-SÁCH ĐÃ MUA
+MUA SÁCH
 ====
 
-Thêm sách đã mua
+API mua sách.
+Link tải module:
+
+- [Phiên bản mới nhất ngày 17/07/2019.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/author/Author_v1.2.jar)
+- [Folder.](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/author)
+
+Thuộc tính của bảng sách đã mua
+-------------------------------
+
+|Thuộc tính|Loại|Mô tả||
+|:-|:-|:-|-:|
+|`bookshelfId`|Integer(11)|Mã sách đã mua.|`READONLY`|
+|`bookshelfUserId`|Integer(11)|Mã người dùng.|`READ-WRITE`|
+|`bookshelfBookId`|Integer(11)|Mã sách.|`READ-WRITE`|
+|`bookshelfLastPage`|Integer(11)|Trang đã đọc gần đây nhất|`READ-WRITE`|
+|`bookshelfBookmark`|String|Đánh dấu trang sách.|`READ-WRITE`|
+|`bookshelfDateExp`|DateTime|Ngày hết hạn.|`READ-WRITE`|
+|`bookshelfDateCreated`|DateTime|Ngày tạo.|`READONLY`|
+|`bookshelfDateModified`|DateTime|Ngày chỉnh sửa gần nhất.|`READONLY`|
+
+Mua sách
 ----------------
-> Đang xây dựng
+
+API mua sách.
+
+|Thuộc tính|Loại|Mô tả|Ghi chú|
+|:-|:-|:-|-:|
+|`user_id`|Integer|Mã người dùng| > 0 |
+|`book_id`|Integer|Mã sách| > 0 |
+|`type`|String|Loại tác vụ|`buy` và `rent`|
+|`day_rent`|Integer|Số ngày thuê| >= 0 |
+
+> <img src="./include/image/btn-post.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Checkout!2.2/checkout
+
+```json
+{
+  "result": "OK, thao tác thành công!"
+}
+```
 
 Cập nhật sách đã mua
 --------------------
 > Đang xây dựng
 
-Lấy thông tin sách đã mua
--------------------------
-
-### Lấy thông tin sách đã mua
-> Đang xây dựng
-
-### Lấy số trang đã đọc
-> Đang xây dựng
-
-### Lấy thời hạn đọc sách
-> Đang xây dựng
-
 Lấy danh sách sách đã mua
 -------------------------
-> Đang xây dựng
+
+API lấy danh sách sách đã mua qua ID người dùng.
+
+> <img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Checkout!2.2/bookshelf?user_id=1
+
+```json
+{
+  "result": {
+    "Bookself": [
+      {
+        "bookshelfId": 2,
+        "bookshelfUserId": 1,
+        "bookshelfBookId": 2,
+        "bookshelfLastPage": 0,
+        "bookshelfBookmark": {
+          "@nil": "true"
+        },
+        "bookshelfDateExp": {
+          "@nil": "true"
+        },
+        "bookshelfDateCreated": "2019-07-17T00:06:07.000+07:00"
+      },
+      {
+        "bookshelfId": 3,
+        "bookshelfUserId": 1,
+        "bookshelfBookId": 2,
+        "bookshelfLastPage": 0,
+        "bookshelfBookmark": {
+          "@nil": "true"
+        },
+        "bookshelfDateExp": {
+          "@nil": "true"
+        },
+        "bookshelfDateCreated": "2019-07-17T00:08:44.000+07:00"
+      },
+      {
+        "bookshelfId": 8,
+        "bookshelfUserId": 1,
+        "bookshelfBookId": 1,
+        "bookshelfLastPage": 0,
+        "bookshelfBookmark": {
+          "@nil": "true"
+        },
+        "bookshelfDateExp": "2019-07-22T12:44:40.000+07:00",
+        "bookshelfDateCreated": "2019-07-17T12:44:40.000+07:00"
+      },
+      {
+        "bookshelfId": 9,
+        "bookshelfUserId": 1,
+        "bookshelfBookId": 5,
+        "bookshelfLastPage": 0,
+        "bookshelfBookmark": {
+          "@nil": "true"
+        },
+        "bookshelfDateExp": "2019-07-22T12:46:52.000+07:00",
+        "bookshelfDateCreated": "2019-07-17T12:46:52.000+07:00"
+      },
+      {
+        "bookshelfId": 10,
+        "bookshelfUserId": 1,
+        "bookshelfBookId": 2,
+        "bookshelfLastPage": 0,
+        "bookshelfBookmark": {
+          "@nil": "true"
+        },
+        "bookshelfDateExp": {
+          "@nil": "true"
+        },
+        "bookshelfDateCreated": "2019-07-17T15:33:57.000+07:00"
+      }
+    ]
+  }
+}
+```
