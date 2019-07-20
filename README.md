@@ -65,6 +65,41 @@ X-ORACLE-DMS-RID →0
 STUBO-TotalItems →21
 ```
 
+Xác thực
+--------
+
+Một số API sử dụng JSON Web Tokens (jwt) để xác thực thành viên. Tham khảo tại link sau: [JSON Web Token](https://jwt.io/). Hệ thống sử dụng thuật toán [HS256](https://vi.wikipedia.org/wiki/SHA#SHA-256) để mã hóa jwt và [Base64](https://en.wikipedia.org/wiki/Base64) để mã hóa token của người dùng. Tất cả được hỗ trợ trong thư viện mã nguồn mở [JJWT](https://java.jsonwebtoken.io/). Token và jwt sẽ được trả về tại phần `HTTP Header` với tham số `STUBO-Token` và `STUBO-JWT`.
+
+VD:
+
+[JWT mẫu](https://jwt.io/#debugger-io?token=eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjM2MzIxMDIsInN1YiI6IlVzZXIiLCJpc3MiOiJTVFVCTyIsInVpZCI6IjMiLCJ1c24iOiJFcmljIiwiZXhwIjoxNTY0MTYwNDAwfQ.8YEcuJHZQDINQU3aITae8C4JT0iNCwHTNauTNQ_7XlU)
+
+![JWT mẫu](./include/image/jwt.png)
+
+### Thuộc tính trong JWT
+
+|Thuộc tính|Mô tả||
+|:-|:-|
+|`alg`|Thuật toán mã hóa sửa dụng|
+|`iat`|Ngày tạo (Đổi sang millisecond).|
+|`sub`|Chủ đề của token.|
+|`iss`|Tổ chức tạo và ký token.|
+|`uid `|Mã người dùng.|
+|`usn`|Tên người dùng.|
+|`exp`|Ngày hết hạn (Đổi sang millisecond).|
+
+### Thuộc tính trong bản token
+
+|Thuộc tính|Loại|Mô tả||
+|:-|:-|:-|
+|`tokenId`|Integer(11)|Mã token.|
+|`userId`|Integer(11)|Mã người dùng.|
+|`tokenName`|String(128)|Tên token|
+|`tokenPermissions`|String(10)|Quyền của token*|
+|`tokenKey`|String(64)|Token|
+|`tokenDateEnd`|DateTime|Ngày giờ token hết hiệu lực|
+|`tokenDateCreated`|DateTime|Ngày giờ tạo.|
+
 Test
 ----
 Để test thử hoạt động của Server, các bạn có thể tải file [tại đây](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/test) và Deploy lên server.
@@ -103,6 +138,32 @@ Thuộc tính của khách hàng
 |`User_Address`|String|Địa chỉ khách hàng.|`READ-WRITE`|
 |`User_Account_Balance`|Integer(11)|Số tiền còn trong tài khoản.|`READ-WRITE`|
 
+Đăng nhập
+---------
+
+API đăng nhập thành viên
+
+> <img src="./include/image/btn-post.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Authentication!1.0/login
+
+> Tham số của API
+
+```json
+{
+  "user_name" : "Tên đăng nhập.",
+  "user_password" : "Mật khẩu"
+}
+```
+
+> Trả về
+```json
+{
+  "result": {
+    "tokenKey": "qsQxOg1UWUuLTgzvX60L4pkVi0QxQdNSsYe4UjK8VSo9psyQZCJjNFkBKD0P0Veb",
+    "jwtToken": "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjM2MzIxMDIsInN1YiI6IlVzZXIiLCJpc3MiOiJTVFVCTyIsInVpZCI6IjMiLCJ1c24iOiJFcmljIiwiZXhwIjoxNTY0MTYwNDAwfQ.8YEcuJHZQDINQU3aITae8C4JT0iNCwHTNauTNQ_7XlU"
+  }
+}
+```
+
 Tạo thành viên mới
 ------------------
 > Đang xây dựng
@@ -118,7 +179,6 @@ Cập nhật thông tin thành viên
 API cập nhật tài khoản thành viên.
 
 Tham số của API
----------------
 
 |Tham số|Loại|Mô tả|
 |:-|:-:|:-|
@@ -170,10 +230,6 @@ API lấy thông tin thành viên dựa trên ID.
 ```
 
 ### Lấy hạn thành viên
-> Đang xây dựng
-
-Xác thực thành viên
--------------------
 > Đang xây dựng
 
 Lấy thông tin tài khoản thanh toán
