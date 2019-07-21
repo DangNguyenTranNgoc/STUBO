@@ -139,7 +139,7 @@ Thuộc tính của khách hàng
 
 API đăng nhập thành viên
 
-> <img src="./include/image/btn-post.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Authentication!1.0/login
+> <img src="./include/image/btn-post.svg" height="15"> https://14.197.88.103:7102/soa-infra/resources/default/Authentication!2.6/login
 
 > Tham số của API
 
