@@ -78,7 +78,7 @@ VD:
 
 ### Thuộc tính trong JWT
 
-|Thuộc tính|Mô tả||
+|Thuộc tính|Mô tả|
 |:-|:-|
 |`alg`|Thuật toán mã hóa sửa dụng|
 |`iat`|Ngày tạo (Đổi sang millisecond).|
@@ -90,7 +90,7 @@ VD:
 
 ### Thuộc tính trong bản token
 
-|Thuộc tính|Loại|Mô tả||
+|Thuộc tính|Loại|Mô tả|
 |:-|:-|:-|
 |`tokenId`|Integer(11)|Mã token.|
 |`userId`|Integer(11)|Mã người dùng.|
@@ -98,11 +98,7 @@ VD:
 |`tokenPermissions`|String(10)|Quyền của token*|
 |`tokenKey`|String(64)|Token|
 |`tokenDateEnd`|DateTime|Ngày giờ token hết hiệu lực|
-|`tokenDateCreated`|DateTime|Ngày giờ tạo.|
-
-Test
-----
-Để test thử hoạt động của Server, các bạn có thể tải file [tại đây](https://github.com/DangNguyenTranNgoc/STUBO/tree/master/deployments/test) và Deploy lên server.
+|`tokenDateCreated`|DateTime|Ngày giờ tạo yoken.|
 
 Database
 --------
