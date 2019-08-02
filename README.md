@@ -187,7 +187,43 @@ Tham số của API
 - 0: Cộng thêm (Mặc định).
 - 1: Giảm bớt.
 
-><img src="./include/image/btn-put.svg" height="15"> http://localhost:7101/soa-infra/resources/default/User!1.0/balance?id=5&money=20000
+><img src="./include/image/btn-put.svg" height="15"> https://104.197.88.103:7102/soa-infra/resources/default/User!2.4/balance?id=5&money=20000
+
+>request
+```json
+{
+   "id" : 1,
+   "money" : "2000000",
+   "add" : 0
+}
+```
+>response
+```json
+{
+  "result": {
+    "user": [
+      {
+        "userId": 1,
+        "userName": "Blanche",
+        "userEmail": "tyrell1981@gmail.com",
+        "userFirstName": "R Blanche",
+        "userLastName": "Frieda",
+        "userBirthDay": "1990-05-16T00:00:00.000+00:00",
+        "userNewsLetter": false,
+        "userActive": false,
+        "userAvatar": "https://www.fakepersongenerator.com/Face/female/female20161025195257019.jpg",
+        "userType": true,
+        "userDateExpired": {
+          "@nil": "true"
+        },
+        "userAddress": "Cambridge, Massachusetts(MA), USA",
+        "userBalance": "44920000",
+        "userDateModified": "2019-08-02T13:12:21.333+00:00"
+      }
+    ]
+  }
+}
+```
 
 ### Cập nhật hạn thành viên
 > Đang xây dựng
@@ -405,420 +441,7 @@ API cho phép lấy thông tin danh sách các cuốn sách. Mặc định API s
         "categorySlug": "sach-van-hoc"
       }
     },
-    {
-      "bookId": 2,
-      "bookName": " Harry Potter Và Hòn Đá Phù Thủy - Tập 1 (Tái Bản 2017)",
-      "bookIntroduce": "Harry Potter Và Hòn Đá Phù Thủy - Tập 1 (Tái Bản 2017)\r\n\r\nKhi một lá thư được gởi đến cho cậu bé Harry Potter bình thường và bất hạnh, cậu khám phá ra một bí mật đã được che giấu suốt cả một thập kỉ. Cha mẹ cậu chính là phù thủy và cả hai đã bị lời nguyền của Chúa tể Hắc ám giết hại khi Harry mới chỉ là một đứa trẻ, và bằng cách nào đó, cậu đã giữ được mạng sống của mình. Thoát khỏi những người giám hộ Muggle không thể chịu đựng nổi để nhập học vào trường Hogwarts, một trường đào tạo phù thủy với những bóng ma và phép thuật, Harry tình cờ dấn thân vào một cuộc phiêu lưu đầy gai góc khi cậu phát hiện ra một con chó ba đầu đang canh giữ một căn phòng trên tầng ba. Rồi Harry nghe nói đến một viên đá bị mất tích sở hữu những sức mạnh lạ kì, rất quí giá, vô cùng nguy hiểm, mà cũng có thể là mang cả hai đặc điểm trên.",
-      "bookSize": "14x20cm",
-      "bookDateSubmitted": "2019-07-13T11:20:59.000+07:00",
-      "bookCoverImage": "https://salt.tikicdn.com/cache/550x550/ts/product/92/77/b0/ec0a4054a5e85ea308d35f643c884c98.jpg",
-      "bookStatus": true,
-      "bookDatePublish": "2019-07-13T11:20:59.000+07:00",
-      "bookMass": "1kg",
-      "bookFormat": "pdf",
-      "bookPageNumber": 366,
-      "bookChapter": {
-        "@nil": "true"
-      },
-      "bookLanguage": "Tiếng Việt",
-      "bookPrice": 135000.0,
-      "bookListImage": {
-        "@nil": "true"
-      },
-      "bookRate": 4.5,
-      "bookTotalRate": 165,
-      "bookNormalPrice": 135000.0,
-      "bookRentPrice": 50000.0,
-      "bookLink": {
-        "@nil": "true"
-      },
-      "Author": {
-        "authorId": 3,
-        "authorName": "J. K. Rowling",
-        "authorNote": "J.K Rowling là bút danh của Joanne \"Jo\" Rowling, sinh ngày 31/7/1965, cư ngụ tại thủ đô Edinburgh,Scotland là tiểu thuyết gia người Anh, tác giả bộ truyện giả tưởng nổi tiếng Harry Potter với bút danh J. K. Rowling.\r\nBộ sách này được hàng triệu độc giả già trẻ trên thế giới yêu thích, nhận được nhiều giải thưởng liên tiếp và đến năm 2005 bán được 300 triệu bản trên toàn thế giới. Vào năm 2006, tạp chí Forbes xem bà là người phụ nữ giàu thứ hai trong lĩnh vực nghệ thuật giải trí chỉ sau Oprah Winfrey. Năm 2007, sau thành công vang dội của truyện Harry Potter 7 và phim Harry Potter 5, bà được tạp chí US Entertainment Weekly là 1 trong 25 nghệ sĩ của năm 2007. Bà đã được trao huân chương Bắc Đẩu Bội tinh vào ngày 3 tháng 2 năm 2009 vì tài năng xuất chúng về văn học thiếu nhi. Năm 2010 bà được trao Giải Văn học Hans Christian Andersen.",
-        "authorImage": "https://www.vinabook.com/images/thumbnails/author/210x/133281_jk-rowling-sum2348620b.jpg"
-      },
-      "Nxb": {
-        "nxbId": 1,
-        "nxbName": "Nhà Xuất Bản Trẻ",
-        "nxbImage": "https://www.nxbtre.com.vn/css/skin/logo.png"
-      },
-      "Category": {
-        "categoryId": 1,
-        "categoryParentId": 0,
-        "categoryName": "Sách văn học",
-        "categoryImageLink": " ",
-        "categorySlug": "sach-van-hoc"
-      }
-    },
-    {
-      "bookId": 3,
-      "bookName": "Harry Potter Và Tên Tù Nhân Ngục Azkaban - Tập 3 (Tái Bản 2017)",
-      "bookIntroduce": "Harry Potter Và Tên Tù Nhân Ngục Azkaban - Tập 3 (Tái Bản 2017)\r\n\r\nHarry Potter may mắn sống sót đến tuổi 13, sau nhiều cuộc tấn công của Chúa tể hắc ám.\r\n\r\nNhưng hy vọng có một học kỳ yên ổn với Quidditch của cậu đã tiêu tan thành mây khói khi một kẻ điên cuồng giết người hàng loạt vừa thoát khỏi nhà tù Azkaban, với sự lùng sục của những cai tù là giám ngục.\r\n\r\nDường như trường Hogwarts là nơi an toàn nhất cho Harry lúc này. Nhưng có phải là sự trùng hợp khi cậu luôn cảm giác có ai đang quan sát mình từ bóng đêm, và những điềm báo của giáo sư Trelawney liệu có chính xác?\r\n\r\n‘Câu chuyện được kể với trí tưởng tượng bay bổng, sự hài hước bất tận có thể quyến rũ cả người lớn lẫn trẻ em.’",
-      "bookSize": "14 x 20 cm",
-      "bookDateSubmitted": "2019-07-13T15:10:22.000+07:00",
-      "bookCoverImage": "https://salt.tikicdn.com/cache/550x550/media/catalog/product/h/a/harry-potter.u5102.d20170425.t095624.709837.jpg",
-      "bookStatus": true,
-      "bookDatePublish": "2019-07-13T15:10:22.000+07:00",
-      "bookMass": "1 kg",
-      "bookFormat": "pdf",
-      "bookPageNumber": 560,
-      "bookChapter": {
-        "@nil": "true"
-      },
-      "bookLanguage": "Tiếng Việt",
-      "bookPrice": 180000.0,
-      "bookListImage": {
-        "@nil": "true"
-      },
-      "bookRate": 4.5,
-      "bookTotalRate": 65,
-      "bookNormalPrice": 180000.0,
-      "bookRentPrice": 50000.0,
-      "bookLink": {
-        "@nil": "true"
-      },
-      "Author": {
-        "authorId": 3,
-        "authorName": "J. K. Rowling",
-        "authorNote": "J.K Rowling là bút danh của Joanne \"Jo\" Rowling, sinh ngày 31/7/1965, cư ngụ tại thủ đô Edinburgh,Scotland là tiểu thuyết gia người Anh, tác giả bộ truyện giả tưởng nổi tiếng Harry Potter với bút danh J. K. Rowling.\r\nBộ sách này được hàng triệu độc giả già trẻ trên thế giới yêu thích, nhận được nhiều giải thưởng liên tiếp và đến năm 2005 bán được 300 triệu bản trên toàn thế giới. Vào năm 2006, tạp chí Forbes xem bà là người phụ nữ giàu thứ hai trong lĩnh vực nghệ thuật giải trí chỉ sau Oprah Winfrey. Năm 2007, sau thành công vang dội của truyện Harry Potter 7 và phim Harry Potter 5, bà được tạp chí US Entertainment Weekly là 1 trong 25 nghệ sĩ của năm 2007. Bà đã được trao huân chương Bắc Đẩu Bội tinh vào ngày 3 tháng 2 năm 2009 vì tài năng xuất chúng về văn học thiếu nhi. Năm 2010 bà được trao Giải Văn học Hans Christian Andersen.",
-        "authorImage": "https://www.vinabook.com/images/thumbnails/author/210x/133281_jk-rowling-sum2348620b.jpg"
-      },
-      "Nxb": {
-        "nxbId": 1,
-        "nxbName": "Nhà Xuất Bản Trẻ",
-        "nxbImage": "https://www.nxbtre.com.vn/css/skin/logo.png"
-      },
-      "Category": {
-        "categoryId": 1,
-        "categoryParentId": 0,
-        "categoryName": "Sách văn học",
-        "categoryImageLink": " ",
-        "categorySlug": "sach-van-hoc"
-      }
-    },
-    {
-      "bookId": 4,
-      "bookName": "Harry Potter Và Chiếc Cốc Lửa - Tập 4 (Tái Bản 2017)",
-      "bookIntroduce": "Harry Potter Và Chiếc Cốc Lửa - Tập 4 (Tái Bản 2017)\r\n\r\nKhi giải Quidditch Thế giới bị cắt ngang bởi những kẻ ủng hộ Chúa tể Voldemort và sự trở lại của Dấu hiệu hắc ám khủng khiếp, Harry ý thức được rõ ràng rằng, Chúa tể Voldemort đang ngày càng mạnh hơn. Và để trở lại thế giới phép thuật, Chúa tể hắc ám cần phải đánh bại kẻ duy nhất sống sót từ lời nguyền chết chóc của hắn - Harry Potter. Vì lẽ đó, khi Harry bị buộc phải bước vào giải đấu Tam Pháp thuật uy tín nhưng nguy hiểm, cậu nhận ra rằng trên cả chiến thắng, cậu phải giữ được mạng sống của mình.\r\n\r\nBốn năm của Harry cũng như của chúng tôi ở trường Hogwarts thật vui nhộn, một thế giới đầy hài hước cùng nhiều hoạt động thú vị.",
-      "bookSize": "14 x 20 cm",
-      "bookDateSubmitted": "2019-07-13T15:10:22.000+07:00",
-      "bookCoverImage": "https://salt.tikicdn.com/cache/550x550/media/catalog/product/n/x/nxbtre_full_20342017_033410.u4972.d20170426.t163428.208230.jpg",
-      "bookStatus": true,
-      "bookDatePublish": "2019-07-13T15:10:22.000+07:00",
-      "bookMass": "1kg",
-      "bookFormat": "pdf",
-      "bookPageNumber": 922,
-      "bookChapter": {
-        "@nil": "true"
-      },
-      "bookLanguage": "Tiếng Việt",
-      "bookPrice": 270000.0,
-      "bookListImage": {
-        "@nil": "true"
-      },
-      "bookRate": 4.5,
-      "bookTotalRate": 62,
-      "bookNormalPrice": 270000.0,
-      "bookRentPrice": 50000.0,
-      "bookLink": "https://salt.tikicdn.com/cache/550x550/media/catalog/product/n/x/nxbtre_full_20342017_033410.u4972.d20170426.t163428.208230.jpg",
-      "Author": {
-        "authorId": 3,
-        "authorName": "J. K. Rowling",
-        "authorNote": "J.K Rowling là bút danh của Joanne \"Jo\" Rowling, sinh ngày 31/7/1965, cư ngụ tại thủ đô Edinburgh,Scotland là tiểu thuyết gia người Anh, tác giả bộ truyện giả tưởng nổi tiếng Harry Potter với bút danh J. K. Rowling.\r\nBộ sách này được hàng triệu độc giả già trẻ trên thế giới yêu thích, nhận được nhiều giải thưởng liên tiếp và đến năm 2005 bán được 300 triệu bản trên toàn thế giới. Vào năm 2006, tạp chí Forbes xem bà là người phụ nữ giàu thứ hai trong lĩnh vực nghệ thuật giải trí chỉ sau Oprah Winfrey. Năm 2007, sau thành công vang dội của truyện Harry Potter 7 và phim Harry Potter 5, bà được tạp chí US Entertainment Weekly là 1 trong 25 nghệ sĩ của năm 2007. Bà đã được trao huân chương Bắc Đẩu Bội tinh vào ngày 3 tháng 2 năm 2009 vì tài năng xuất chúng về văn học thiếu nhi. Năm 2010 bà được trao Giải Văn học Hans Christian Andersen.",
-        "authorImage": "https://www.vinabook.com/images/thumbnails/author/210x/133281_jk-rowling-sum2348620b.jpg"
-      },
-      "Nxb": {
-        "nxbId": 1,
-        "nxbName": "Nhà Xuất Bản Trẻ",
-        "nxbImage": "https://www.nxbtre.com.vn/css/skin/logo.png"
-      },
-      "Category": {
-        "categoryId": 1,
-        "categoryParentId": 0,
-        "categoryName": "Sách văn học",
-        "categoryImageLink": " ",
-        "categorySlug": "sach-van-hoc"
-      }
-    },
-    {
-      "bookId": 5,
-      "bookName": "Harry Potter Và Hội Phượng Hoàng - Tập 5 (Tái Bản 2017)",
-      "bookIntroduce": "Harry Potter Và Hội Phượng Hoàng - Tập 5 (Tái Bản 2017)\r\n\r\nHarry tức giận vì bị bỏ rơi ở nhà Dursley trong dịp hè, cậu ngờ rằng Chúa tể hắc ám Voldemort đang tập hợp lực lượng, và vì cậu có nguy cơ bị tấn công, những người Harry luôn coi là bạn đang cố che giấu tung tích cậu. Cuối cùng, sau khi được giải cứu, Harry khám phá ra rằng giáo sư Dumbledore đang tập hợp lại Hội Phượng Hoàng – một đoàn quân bí mật đã được thành lập từ những năm trước nhằm chống lại Chúa tể Voldemort. Tuy nhiên, Bộ Pháp thuật không ủng hộ Hội Phượng Hoàng, những lời bịa đặt nhanh chóng được đăng tải trên Nhật báo Tiên tri – một tờ báo của giới phù thủy, Harry lo ngại rằng rất có khả năng cậu sẽ phải gánh vác trách nhiệm chống lại cái ác một mình.\r\n\r\n‘Hoang đường nhưng không hoang tưởng, trí tưởng tượng của Rowling cùng sự táo bạo của cô đã tạo cho cô một phong cách riêng.’ - The Times.",
-      "bookSize": "14 x 20 cm",
-      "bookDateSubmitted": "2019-07-13T15:10:22.000+07:00",
-      "bookCoverImage": "https://salt.tikicdn.com/cache/550x550/media/catalog/product/h/a/harry-potter-va-hoi-phuong-hoang.u5102.d20170614.t140027.842314.jpg",
-      "bookStatus": true,
-      "bookDatePublish": "2019-07-13T15:10:22.000+07:00",
-      "bookMass": "1kg",
-      "bookFormat": "pdf",
-      "bookPageNumber": 1310,
-      "bookChapter": {
-        "@nil": "true"
-      },
-      "bookLanguage": "Tiếng Việt",
-      "bookPrice": 355000.0,
-      "bookListImage": {
-        "@nil": "true"
-      },
-      "bookRate": 4.0,
-      "bookTotalRate": 61,
-      "bookNormalPrice": 355000.0,
-      "bookRentPrice": 50000.0,
-      "bookLink": {
-        "@nil": "true"
-      },
-      "Author": {
-        "authorId": 3,
-        "authorName": "J. K. Rowling",
-        "authorNote": "J.K Rowling là bút danh của Joanne \"Jo\" Rowling, sinh ngày 31/7/1965, cư ngụ tại thủ đô Edinburgh,Scotland là tiểu thuyết gia người Anh, tác giả bộ truyện giả tưởng nổi tiếng Harry Potter với bút danh J. K. Rowling.\r\nBộ sách này được hàng triệu độc giả già trẻ trên thế giới yêu thích, nhận được nhiều giải thưởng liên tiếp và đến năm 2005 bán được 300 triệu bản trên toàn thế giới. Vào năm 2006, tạp chí Forbes xem bà là người phụ nữ giàu thứ hai trong lĩnh vực nghệ thuật giải trí chỉ sau Oprah Winfrey. Năm 2007, sau thành công vang dội của truyện Harry Potter 7 và phim Harry Potter 5, bà được tạp chí US Entertainment Weekly là 1 trong 25 nghệ sĩ của năm 2007. Bà đã được trao huân chương Bắc Đẩu Bội tinh vào ngày 3 tháng 2 năm 2009 vì tài năng xuất chúng về văn học thiếu nhi. Năm 2010 bà được trao Giải Văn học Hans Christian Andersen.",
-        "authorImage": "https://www.vinabook.com/images/thumbnails/author/210x/133281_jk-rowling-sum2348620b.jpg"
-      },
-      "Nxb": {
-        "nxbId": 1,
-        "nxbName": "Nhà Xuất Bản Trẻ",
-        "nxbImage": "https://www.nxbtre.com.vn/css/skin/logo.png"
-      },
-      "Category": {
-        "categoryId": 1,
-        "categoryParentId": 0,
-        "categoryName": "Sách văn học",
-        "categoryImageLink": " ",
-        "categorySlug": "sach-van-hoc"
-      }
-    },
-    {
-      "bookId": 6,
-      "bookName": "Harry Potter Và Hoàng Tử Lai - Tập 06 (Tái Bản 2017)",
-      "bookIntroduce": "Harry Potter Và Hoàng Tử Lai - Tập 06 (Tái Bản 2017)\r\n\r\nĐây là năm thứ 6 của Harry Potter tại trường Hogwarts. Trong lúc những thế lực hắc ám của Voldemort gieo rắc nỗi kinh hoàng và sợ hãi ở khắp nơi, mọi chuyện càng lúc càng trở nên rõ ràng hơn đối với Harry, rằng cậu sẽ sớm phải đối diện với định mệnh của mình. Nhưng liệu Harry đã sẵn sàng vượt qua những thử thách đang chờ đợi phía trước?\r\n\r\nTrong cuộc phiêu lưu tăm tối và nghẹt thở nhất của mình, J.K.Rowling bắt đầu tài tình tháo gỡ từng mắc lưới phức tạp mà cô đã mạng lên, cũng là lúc chúng ta khám phá ra sự thật về Harry, cụ Dumblebore, thầy Snape và, tất nhiên, Kẻ Chớ Gọi Tên Ra…\r\n\r\n‘Diễn biến nhanh, huyền bí, hấp dẫn và chặt chẽ trong từng chi tiết.'",
-      "bookSize": "14 x 20 cm",
-      "bookDateSubmitted": "2019-07-13T15:10:22.000+07:00",
-      "bookCoverImage": "https://salt.tikicdn.com/cache/550x550/media/catalog/product/n/x/nxbtre_full_29292017_042903.u5430.d20170714.t090946.716950.jpg",
-      "bookStatus": true,
-      "bookDatePublish": "2019-07-13T15:10:22.000+07:00",
-      "bookMass": "1kg",
-      "bookFormat": "pdf",
-      "bookPageNumber": 716,
-      "bookChapter": {
-        "@nil": "true"
-      },
-      "bookLanguage": "Tiếng Việt",
-      "bookPrice": 215000.0,
-      "bookListImage": {
-        "@nil": "true"
-      },
-      "bookRate": 4.0,
-      "bookTotalRate": 33,
-      "bookNormalPrice": 215000.0,
-      "bookRentPrice": 50000.0,
-      "bookLink": {
-        "@nil": "true"
-      },
-      "Author": {
-        "authorId": 3,
-        "authorName": "J. K. Rowling",
-        "authorNote": "J.K Rowling là bút danh của Joanne \"Jo\" Rowling, sinh ngày 31/7/1965, cư ngụ tại thủ đô Edinburgh,Scotland là tiểu thuyết gia người Anh, tác giả bộ truyện giả tưởng nổi tiếng Harry Potter với bút danh J. K. Rowling.\r\nBộ sách này được hàng triệu độc giả già trẻ trên thế giới yêu thích, nhận được nhiều giải thưởng liên tiếp và đến năm 2005 bán được 300 triệu bản trên toàn thế giới. Vào năm 2006, tạp chí Forbes xem bà là người phụ nữ giàu thứ hai trong lĩnh vực nghệ thuật giải trí chỉ sau Oprah Winfrey. Năm 2007, sau thành công vang dội của truyện Harry Potter 7 và phim Harry Potter 5, bà được tạp chí US Entertainment Weekly là 1 trong 25 nghệ sĩ của năm 2007. Bà đã được trao huân chương Bắc Đẩu Bội tinh vào ngày 3 tháng 2 năm 2009 vì tài năng xuất chúng về văn học thiếu nhi. Năm 2010 bà được trao Giải Văn học Hans Christian Andersen.",
-        "authorImage": "https://www.vinabook.com/images/thumbnails/author/210x/133281_jk-rowling-sum2348620b.jpg"
-      },
-      "Nxb": {
-        "nxbId": 1,
-        "nxbName": "Nhà Xuất Bản Trẻ",
-        "nxbImage": "https://www.nxbtre.com.vn/css/skin/logo.png"
-      },
-      "Category": {
-        "categoryId": 1,
-        "categoryParentId": 0,
-        "categoryName": "Sách văn học",
-        "categoryImageLink": " ",
-        "categorySlug": "sach-van-hoc"
-      }
-    },
-    {
-      "bookId": 7,
-      "bookName": "Harry Potter Và Bảo Bối Tử Thần - Tập 07 (Tái Bản 2017)",
-      "bookIntroduce": "Harry Potter Và Bảo Bối Tử Thần - Tập 07 (Tái Bản 2017)\r\n\r\nHarry đang chờ đợi ở trường Privet Drive. Hội Phượng Hoàng sắp đến hộ tống nó ra đi an toàn, gắng hết sức không để cho Voldemort và bọn tay chân hắn biết được. Nhưng sau đó Harry sẽ làm gì? Làm cách nào nó có thể hoàn thành nhiệm vụ cực kỳ quan trọng và dường như bất khả thi mà giáo sự Dumbledore đã giao lại cho nó?",
-      "bookSize": "14 x 20 cm",
-      "bookDateSubmitted": "2019-07-13T15:10:22.000+07:00",
-      "bookCoverImage": "https://salt.tikicdn.com/cache/550x550/media/catalog/product/n/x/nxbtre_full_11592017_085924.u5430.d20170714.t085343.684591.jpg",
-      "bookStatus": true,
-      "bookDatePublish": "2019-07-13T15:10:22.000+07:00",
-      "bookMass": "1kg",
-      "bookFormat": "pdf",
-      "bookPageNumber": 846,
-      "bookChapter": {
-        "@nil": "true"
-      },
-      "bookLanguage": {
-        "@nil": "true"
-      },
-      "bookPrice": 245000.0,
-      "bookListImage": {
-        "@nil": "true"
-      },
-      "bookRate": 4.5,
-      "bookTotalRate": 33,
-      "bookNormalPrice": 245000.0,
-      "bookRentPrice": 50000.0,
-      "bookLink": {
-        "@nil": "true"
-      },
-      "Author": {
-        "authorId": 3,
-        "authorName": "J. K. Rowling",
-        "authorNote": "J.K Rowling là bút danh của Joanne \"Jo\" Rowling, sinh ngày 31/7/1965, cư ngụ tại thủ đô Edinburgh,Scotland là tiểu thuyết gia người Anh, tác giả bộ truyện giả tưởng nổi tiếng Harry Potter với bút danh J. K. Rowling.\r\nBộ sách này được hàng triệu độc giả già trẻ trên thế giới yêu thích, nhận được nhiều giải thưởng liên tiếp và đến năm 2005 bán được 300 triệu bản trên toàn thế giới. Vào năm 2006, tạp chí Forbes xem bà là người phụ nữ giàu thứ hai trong lĩnh vực nghệ thuật giải trí chỉ sau Oprah Winfrey. Năm 2007, sau thành công vang dội của truyện Harry Potter 7 và phim Harry Potter 5, bà được tạp chí US Entertainment Weekly là 1 trong 25 nghệ sĩ của năm 2007. Bà đã được trao huân chương Bắc Đẩu Bội tinh vào ngày 3 tháng 2 năm 2009 vì tài năng xuất chúng về văn học thiếu nhi. Năm 2010 bà được trao Giải Văn học Hans Christian Andersen.",
-        "authorImage": "https://www.vinabook.com/images/thumbnails/author/210x/133281_jk-rowling-sum2348620b.jpg"
-      },
-      "Nxb": {
-        "nxbId": 1,
-        "nxbName": "Nhà Xuất Bản Trẻ",
-        "nxbImage": "https://www.nxbtre.com.vn/css/skin/logo.png"
-      },
-      "Category": {
-        "categoryId": 1,
-        "categoryParentId": 0,
-        "categoryName": "Sách văn học",
-        "categoryImageLink": " ",
-        "categorySlug": "sach-van-hoc"
-      }
-    },
-    {
-      "bookId": 8,
-      "bookName": "Nhà Giả Kim",
-      "bookIntroduce": "Nhà Giả Kim\r\n\r\nTất cả những trải nghiệm trong chuyến phiêu du theo đuổi vận mệnh của mình đã giúp Santiago thấu hiểu được ý nghĩa sâu xa nhất của hạnh phúc, hòa hợp với vũ trụ và con người.\r\n\r\nTiểu thuyết Nhà giả kim của Paulo Coelho như một câu chuyện cổ tích giản dị, nhân ái, giàu chất thơ, thấm đẫm những minh triết huyền bí của phương Đông. Trong lần xuất bản đầu tiên tại Brazil vào năm 1988, sách chỉ bán được 900 bản. Nhưng, với số phận đặc biệt của cuốn sách dành cho toàn nhân loại, vượt ra ngoài biên giới quốc gia, Nhà giả kim đã làm rung động hàng triệu tâm hồn, trở thành một trong những cuốn sách bán chạy nhất mọi thời đại, và có thể làm thay đổi cuộc đời người đọc.\r\n\r\n“Nhưng nhà luyện kim đan không quan tâm mấy đến những điều ấy. Ông đã từng thấy nhiều người đến rồi đi, trong khi ốc đảo và sa mạc vẫn là ốc đảo và sa mạc. Ông đã thấy vua chúa và kẻ ăn xin đi qua biển cát này, cái biển cát thường xuyên thay hình đổi dạng vì gió thổi nhưng vẫn mãi mãi là biển cát mà ông đã biết từ thuở nhỏ. Tuy vậy, tự đáy lòng mình, ông không thể không cảm thấy vui trước hạnh phúc của mỗi người lữ khách, sau bao ngày chỉ có cát vàng với trời xanh nay được thấy chà là xanh tươi hiện ra trước mắt. ‘Có thể Thượng đế tạo ra sa mạc chỉ để cho con người biết quý trọng cây chà là,’ ông nghĩ.”\r\n\r\n- Trích Nhà giả kim",
-      "bookSize": "13 x 20 cm",
-      "bookDateSubmitted": "2019-07-13T15:43:40.000+07:00",
-      "bookCoverImage": "https://salt.tikicdn.com/cache/550x550/media/catalog/product/i/m/img117.u3059.d20170616.t100547.729023.jpg",
-      "bookStatus": true,
-      "bookDatePublish": "2019-07-13T15:43:40.000+07:00",
-      "bookMass": "0.4 kg",
-      "bookFormat": "pdf",
-      "bookPageNumber": 228,
-      "bookChapter": {
-        "@nil": "true"
-      },
-      "bookLanguage": "Tiếng Việt",
-      "bookPrice": 69000.0,
-      "bookListImage": {
-        "@nil": "true"
-      },
-      "bookRate": 4.5,
-      "bookTotalRate": 3416,
-      "bookNormalPrice": 69000.0,
-      "bookRentPrice": 15000.0,
-      "bookLink": {
-        "@nil": "true"
-      },
-      "Author": {
-        "authorId": 11,
-        "authorName": "Paulo Coelho",
-        "authorNote": "Paulo Coelho sinh tại Rio de Janeiro (Brasil), vào trường luật ở đó, nhưng đã bỏ học năm 1970 để du lịch qua México, Peru, Bolivia và Chile, cũng như châu Âu và Bắc Phi. Hai năm sau ông trở về Brasil và bắt đầu soạn lời cho nhạc pop. Ông cộng tác với những nhạc sĩ pop như Raul Seixas. Năm 1974 ông bị bắt giam một thời gian ngắn vì những hoạt động chống lại chế độ độc tài lúc đó ở Brasil.\r\n\r\nSách của ông đã được bán ra hơn 86 triệu bản trên 150 nước và được dịch ra 56 thứ tiếng. Ông đã nhận được nhiều giải thưởng của nhiều nước, trong đó tác phẩm Veronika quyết chết (Veronika decide morrer) được đề cử cho Giải Văn chương Dublin IMPAC Quốc tế có uy tín.",
-        "authorImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Coelhopaulo26012007-1.jpg/360px-Coelhopaulo26012007-1.jpg"
-      },
-      "Nxb": {
-        "nxbId": 13,
-        "nxbName": "Nhà xuất bản Văn học",
-        "nxbImage": "http://www.nxbvanhoc.com//upload/banner/1376194032_top_website_70year.JPG"
-      },
-      "Category": {
-        "categoryId": 1,
-        "categoryParentId": 0,
-        "categoryName": "Sách văn học",
-        "categoryImageLink": " ",
-        "categorySlug": "sach-van-hoc"
-      }
-    },
-    {
-      "bookId": 9,
-      "bookName": "Những Nguyên Tắc Vàng Của Napoleon Hill",
-      "bookIntroduce": "Những Nguyên Tắc Vàng Của Napoleon Hill\r\n\r\nNapoleon Hill là một tác giả được nhiều người yêu mếm và có số lượng lớn các quyển sách nổi tiếng viết về đề tài phát triển tiềm năng con người, giúp hàng triệu người đạt được thành công.\r\n\r\nNhững nguyên tắc vàng của Napoleon Hill tập hợp những bài viết của ông trong khoảng thời gian từ năm 1919 đến năm 1923. \"Những nguyên tắc vàng\" này chính là chiếc chìa khóa hữu dụng trong mọi thời đại, đưa độc giả đến với thành công bằng phương pháp mang tính thực tiễn cao.\r\n",
-      "bookSize": "14",
-      "bookDateSubmitted": "2019-07-13T15:43:40.000+07:00",
-      "bookCoverImage": "https://salt.tikicdn.com/cache/75x75/ts/product/79/94/da/0a562e6d62a7a802a1ffde48804eebb2.jpg",
-      "bookStatus": true,
-      "bookDatePublish": "2019-07-13T15:43:40.000+07:00",
-      "bookMass": "1kg",
-      "bookFormat": "pdf",
-      "bookPageNumber": 223,
-      "bookChapter": {
-        "@nil": "true"
-      },
-      "bookLanguage": "Tiếng Việt",
-      "bookPrice": 64000.0,
-      "bookListImage": {
-        "@nil": "true"
-      },
-      "bookRate": 3.6,
-      "bookTotalRate": 16,
-      "bookNormalPrice": 64000.0,
-      "bookRentPrice": 15000.0,
-      "bookLink": {
-        "@nil": "true"
-      },
-      "Author": {
-        "authorId": 6,
-        "authorName": " Napoleon Hill",
-        "authorNote": "Napoleon Hill (Sinh ngày 26 tháng 10 năm 1883 - mất ngày 8 tháng 11 năm 1970) là một tác gia người Mỹ, một trong những người sáng lập nên một thể loại văn học hiện đại đó là môn \"thành công học\" (là khoa học về sự thành công của cá nhân). Tác phẩm được cho là nổi tiếng nhất của ông có tên \"Suy nghĩ và làm giàu\" (Think and Grow Rich) là. một trong những cuốn sách bán chạy nhất mọi thời đại. Trong sự nghiệp của mình, ông cũng từng được trở thành một cố vấn cho Tổng thống Franklin D. Roosevelt. Câu nói nổi tiếng thể hiện tư tưởng của ông là \"Điều gì mà tâm trí có thể nhận thức và tin tưởng thì tâm trí có thể hoàn thành\".Napoleon Hill được xem là người có ảnh hưởng rộng rãi nhất, mạnh mẽ nhất trong lĩnh vực thành công cá nhân.Cuốn sách kinh điển suy nghĩ và làm giàu của ông đã giúp cho hàng triệu người trên thế giới thành công và nó có một ý nghĩa, vai trò vô cùng quan trọng trong cuộc đời của rất nhiều người thành công như W.Clement Stone, Og Mandino.",
-        "authorImage": "https://www.vinabook.com/images/thumbnails/author/210x/132172_napoleonhill.jpg"
-      },
-      "Nxb": {
-        "nxbId": 4,
-        "nxbName": "Trí Việt",
-        "nxbImage": "https://www.vinabook.com/images/thumbnails/publisher/180x235/145027_firstnews.jpg"
-      },
-      "Category": {
-        "categoryId": 2,
-        "categoryParentId": 0,
-        "categoryName": "Sách kinh tế",
-        "categoryImageLink": " ",
-        "categorySlug": "sach-kinh-te"
-      }
-    },
-    {
-      "bookId": 10,
-      "bookName": "5 Nền Tảng Cho Thành Công - Napoleon Hill",
-      "bookIntroduce": "5 Nền Tảng Cho Thành Công - Napoleon Hill\r\n\r\n Vì sao phải dành cả đời để học cách trở nên thành công, nếu như với những người thật sự khao khát, họ chỉ cần vài tuần lễ để tích lũy các nguyên tắc? Đây là điều có thể làm được, nếu bạn biết cách “đi đường tắt”, tập trung nghiên cứu kinh nghiệm của những người đã-thành-công, đã trải qua quá trình học học lâu dài và vất vả trước đó.\r\n\r\nNapoleon Hill đã dành 20 năm cuộc đời để gặp gỡ và phỏng vấn những người thành công nhất, như “vua thép” Andrew Carnegie, “vua phát minh” Thomas Edison, Henry Ford, Alexander Graham Bell… và hàng trăm tên tuổi tầm cỡ khác. Vừa tích lũy kinh nghiệm từ các câu chuyện tạo dựng sự nghiệp đầy sức mạnh, vừa chiêm nghiệm từ các sóng gió chính bản thân đã trải qua, Napoleon Hill đã đặt bút viết những cuốn sách có thể coi là tuyệt tác, đặt nền móng cho “khoa học của sự thành công”. Tác phẩm “Think and Grow Rich” (Nghĩ giàu làm giàu) của ông kể từ khi ra mắt vào năm 1937 đến nay luôn được coi là kim chỉ nam cho những người mong muốn vươn tới đỉnh cao. Cuốn sách đã được dịch ra hơn bốn mươi thứ tiếng và có ảnh hưởng tới hàng trăm triệu người, thường xuyên xuất hiện trên các giá sách về kinh doanh, truyền cảm hứng ở phạm vi toàn cầu.\r\n\r\nNapoleon Hill là khách mời danh dự của những buổi nói chuyện trên đài phát thanh và truyền hình Hoa Kỳ. Tác phẩm “5 nền tảng cho thành công” đã tập hợp các bản thảo phát thanh chưa từng được công bố do chính ông thực hiện. Đọc cuốn sách này, độc giả sẽ được trải nghiệm gần như nguyên văn những lời Napoleon đã chia sẻ trực tiếp với thính giả trên sóng radio - phương tiện truyền thông chân thực và phổ biến nhất bấy giờ. Nội dung chia sẻ nhấn mạnh vào “Big Five” - 5 nguyên tắc lớn trong số 17 nguyên tắc thành công Napoleon Hill đã đúc rút. Ông cũng không quên đưa ví dụ về cách mà các nguyên tắc này đã đưa các cá nhân, nổi tiếng có, bình dân có, đến điểm đích thành công. Napoleon kỳ vọng thính giả của mình vào thời điểm phát sóng, cũng như độc giả đọc sách ngày nay, có thể qua những gì ông chia sẻ mà khám phá ra “bí quyết tối quan trọng để đạt được thành tựu cá nhân”.",
-      "bookSize": "14 x 20 cm",
-      "bookDateSubmitted": "2019-07-13T15:43:40.000+07:00",
-      "bookCoverImage": "https://salt.tikicdn.com/cache/550x550/ts/product/09/6d/99/cb623c3c2abb612326b78a6effdfddef.jpg",
-      "bookStatus": true,
-      "bookDatePublish": "2019-07-13T15:43:40.000+07:00",
-      "bookMass": "0.5kg",
-      "bookFormat": "pdf",
-      "bookPageNumber": 308,
-      "bookChapter": {
-        "@nil": "true"
-      },
-      "bookLanguage": "Tiếng Việt",
-      "bookPrice": 109000.0,
-      "bookListImage": {
-        "@nil": "true"
-      },
-      "bookRate": 0.0,
-      "bookTotalRate": 0,
-      "bookNormalPrice": 109000.0,
-      "bookRentPrice": 20000.0,
-      "bookLink": {
-        "@nil": "true"
-      },
-      "Author": {
-        "authorId": 6,
-        "authorName": " Napoleon Hill",
-        "authorNote": "Napoleon Hill (Sinh ngày 26 tháng 10 năm 1883 - mất ngày 8 tháng 11 năm 1970) là một tác gia người Mỹ, một trong những người sáng lập nên một thể loại văn học hiện đại đó là môn \"thành công học\" (là khoa học về sự thành công của cá nhân). Tác phẩm được cho là nổi tiếng nhất của ông có tên \"Suy nghĩ và làm giàu\" (Think and Grow Rich) là. một trong những cuốn sách bán chạy nhất mọi thời đại. Trong sự nghiệp của mình, ông cũng từng được trở thành một cố vấn cho Tổng thống Franklin D. Roosevelt. Câu nói nổi tiếng thể hiện tư tưởng của ông là \"Điều gì mà tâm trí có thể nhận thức và tin tưởng thì tâm trí có thể hoàn thành\".Napoleon Hill được xem là người có ảnh hưởng rộng rãi nhất, mạnh mẽ nhất trong lĩnh vực thành công cá nhân.Cuốn sách kinh điển suy nghĩ và làm giàu của ông đã giúp cho hàng triệu người trên thế giới thành công và nó có một ý nghĩa, vai trò vô cùng quan trọng trong cuộc đời của rất nhiều người thành công như W.Clement Stone, Og Mandino.",
-        "authorImage": "https://www.vinabook.com/images/thumbnails/author/210x/132172_napoleonhill.jpg"
-      },
-      "Nxb": {
-        "nxbId": 4,
-        "nxbName": "Trí Việt",
-        "nxbImage": "https://www.vinabook.com/images/thumbnails/publisher/180x235/145027_firstnews.jpg"
-      },
-      "Category": {
-        "categoryId": 20,
-        "categoryParentId": 2,
-        "categoryName": "Sách doanh nhân",
-        "categoryImageLink": " ",
-        "categorySlug": "sach-doanh-nhan"
-      }
-    }
+    ...
   ]
 }
 ```
@@ -1124,6 +747,7 @@ API mua sách.
 
 > <img src="./include/image/btn-post.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Checkout!2.2/checkout
 
+>response
 ```json
 {
   "result": "OK, thao tác thành công!"
@@ -1139,16 +763,16 @@ Lấy danh sách sách đã mua
 
 API lấy danh sách sách đã mua qua ID người dùng.
 
-> <img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Checkout!2.2/bookshelf?user_id=1
+> <img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Checkout!2.2/bookshelf?user_id=2
 
+
+>response
 ```json
 {
   "result": {
     "Bookself": [
       {
-        "bookshelfId": 2,
-        "bookshelfUserId": 1,
-        "bookshelfBookId": 2,
+        "bookshelfId": 80,
         "bookshelfLastPage": 0,
         "bookshelfBookmark": {
           "@nil": "true"
@@ -1156,12 +780,31 @@ API lấy danh sách sách đã mua qua ID người dùng.
         "bookshelfDateExp": {
           "@nil": "true"
         },
-        "bookshelfDateCreated": "2019-07-17T00:06:07.000+07:00"
+        "bookshelfDateCreated": "2019-07-31T14:30:58.000+00:00",
+        "bookshelfDateModified": "2019-07-31T14:30:58.000+00:00",
+        "stuboUser": {
+          "userId": 2,
+          "userName": "snuff",
+          "userFirstName": "Jones",
+          "userLastName": "James",
+          "userDateCreated": "2019-06-28T15:47:23.000+00:00",
+          "userDateModified": "2019-07-31T06:47:24.000+00:00"
+        },
+        "stuboBook": {
+          "bookId": 2,
+          "bookName": "Harry Potter Và Hòn Đá Phù Thủy - Tập 1 (Tái Bản 2017)",
+          "bookCoverImage": "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/x/nxbtre_thumb_21542017_035423.jpg",
+          "bookPageNumber": 366,
+          "bookPrice": 135000.0,
+          "bookNormalPrice": 135000.0,
+          "bookRentPrice": 5000.0,
+          "bookLink": "https://sachvui.com/sachvui-686868666888/ebooks/2018/pdf/Sachvui.Com-loi-song-toi-gian-cua-nguoi-nhat-sasaki-fumio.pdf",
+          "bookDateCreate": "2019-07-13T11:20:59.000+00:00",
+          "bookDateModified": "2019-07-13T11:20:59.000+00:00"
+        }
       },
       {
-        "bookshelfId": 3,
-        "bookshelfUserId": 1,
-        "bookshelfBookId": 2,
+        "bookshelfId": 81,
         "bookshelfLastPage": 0,
         "bookshelfBookmark": {
           "@nil": "true"
@@ -1169,34 +812,31 @@ API lấy danh sách sách đã mua qua ID người dùng.
         "bookshelfDateExp": {
           "@nil": "true"
         },
-        "bookshelfDateCreated": "2019-07-17T00:08:44.000+07:00"
-      },
-      {
-        "bookshelfId": 8,
-        "bookshelfUserId": 1,
-        "bookshelfBookId": 1,
-        "bookshelfLastPage": 0,
-        "bookshelfBookmark": {
-          "@nil": "true"
+        "bookshelfDateCreated": "2019-07-31T14:31:56.000+00:00",
+        "bookshelfDateModified": "2019-07-31T14:31:56.000+00:00",
+        "stuboUser": {
+          "userId": 2,
+          "userName": "snuff",
+          "userFirstName": "Jones",
+          "userLastName": "James",
+          "userDateCreated": "2019-06-28T15:47:23.000+00:00",
+          "userDateModified": "2019-07-31T06:47:24.000+00:00"
         },
-        "bookshelfDateExp": "2019-07-22T12:44:40.000+07:00",
-        "bookshelfDateCreated": "2019-07-17T12:44:40.000+07:00"
+        "stuboBook": {
+          "bookId": 2,
+          "bookName": "Harry Potter Và Hòn Đá Phù Thủy - Tập 1 (Tái Bản 2017)",
+          "bookCoverImage": "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/x/nxbtre_thumb_21542017_035423.jpg",
+          "bookPageNumber": 366,
+          "bookPrice": 135000.0,
+          "bookNormalPrice": 135000.0,
+          "bookRentPrice": 5000.0,
+          "bookLink": "https://sachvui.com/sachvui-686868666888/ebooks/2018/pdf/Sachvui.Com-loi-song-toi-gian-cua-nguoi-nhat-sasaki-fumio.pdf",
+          "bookDateCreate": "2019-07-13T11:20:59.000+00:00",
+          "bookDateModified": "2019-07-13T11:20:59.000+00:00"
+        }
       },
       {
-        "bookshelfId": 9,
-        "bookshelfUserId": 1,
-        "bookshelfBookId": 5,
-        "bookshelfLastPage": 0,
-        "bookshelfBookmark": {
-          "@nil": "true"
-        },
-        "bookshelfDateExp": "2019-07-22T12:46:52.000+07:00",
-        "bookshelfDateCreated": "2019-07-17T12:46:52.000+07:00"
-      },
-      {
-        "bookshelfId": 10,
-        "bookshelfUserId": 1,
-        "bookshelfBookId": 2,
+        "bookshelfId": 83,
         "bookshelfLastPage": 0,
         "bookshelfBookmark": {
           "@nil": "true"
@@ -1204,7 +844,64 @@ API lấy danh sách sách đã mua qua ID người dùng.
         "bookshelfDateExp": {
           "@nil": "true"
         },
-        "bookshelfDateCreated": "2019-07-17T15:33:57.000+07:00"
+        "bookshelfDateCreated": "2019-08-02T06:04:20.000+00:00",
+        "bookshelfDateModified": "2019-08-02T06:04:20.000+00:00",
+        "stuboUser": {
+          "userId": 2,
+          "userName": "snuff",
+          "userFirstName": "Jones",
+          "userLastName": "James",
+          "userDateCreated": "2019-06-28T15:47:23.000+00:00",
+          "userDateModified": "2019-07-31T06:47:24.000+00:00"
+        },
+        "stuboBook": {
+          "bookId": 35,
+          "bookName": "Nhà Giả Kim",
+          "bookCoverImage": "https://salt.tikicdn.com/cache/550x550/media/catalog/product/i/m/img117.u3059.d20170616.t100547.729023.jpg",
+          "bookPageNumber": 228,
+          "bookPrice": 69000.0,
+          "bookNormalPrice": 69000.0,
+          "bookRentPrice": 15000.0,
+          "bookLink": {
+            "@nil": "true"
+          },
+          "bookDateCreate": "2019-07-13T15:43:40.000+00:00",
+          "bookDateModified": "2019-07-13T15:43:40.000+00:00"
+        }
+      },
+      {
+        "bookshelfId": 85,
+        "bookshelfLastPage": 0,
+        "bookshelfBookmark": {
+          "@nil": "true"
+        },
+        "bookshelfDateExp": {
+          "@nil": "true"
+        },
+        "bookshelfDateCreated": "2019-08-02T09:01:24.000+00:00",
+        "bookshelfDateModified": "2019-08-02T09:01:24.000+00:00",
+        "stuboUser": {
+          "userId": 2,
+          "userName": "snuff",
+          "userFirstName": "Jones",
+          "userLastName": "James",
+          "userDateCreated": "2019-06-28T15:47:23.000+00:00",
+          "userDateModified": "2019-07-31T06:47:24.000+00:00"
+        },
+        "stuboBook": {
+          "bookId": 32,
+          "bookName": "Harry Potter Và Hội Phượng Hoàng - Tập 5 (Tái Bản 2017)",
+          "bookCoverImage": "https://salt.tikicdn.com/cache/550x550/media/catalog/product/h/a/harry-potter-va-hoi-phuong-hoang.u5102.d20170614.t140027.842314.jpg",
+          "bookPageNumber": 1310,
+          "bookPrice": 355000.0,
+          "bookNormalPrice": 355000.0,
+          "bookRentPrice": 5000.0,
+          "bookLink": {
+            "@nil": "true"
+          },
+          "bookDateCreate": "2019-07-13T15:10:22.000+00:00",
+          "bookDateModified": "2019-07-13T15:10:22.000+00:00"
+        }
       }
     ]
   }
