@@ -763,7 +763,7 @@ Lấy danh sách sách đã mua
 
 API lấy danh sách sách đã mua qua ID người dùng.
 
-> <img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Checkout!2.2/bookshelf?user_id=2
+> <img src="./include/image/btn-get.svg" height="15"> http://104.197.88.103:7101/soa-infra/resources/default/Checkout!2.2/get_bookshelf?user_id=2
 
 
 >response
